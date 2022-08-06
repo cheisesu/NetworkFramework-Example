@@ -1,0 +1,2 @@
+public enum ReduxError: Error {
+}
