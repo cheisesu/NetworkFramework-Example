@@ -56,6 +56,8 @@ extension UIState {
         var isConnectViewVisible: Bool = false
         var isConnectButtonVisible: Bool = true
         var isDisconnectButtonVisible: Bool = false
+        var isStartServerButtonVisible: Bool = true
+        var isStopServerButtonVisible: Bool = false
 
         init() {}
 
@@ -71,6 +73,12 @@ extension UIState {
             case UIAction.becameDisconnected:
                 state.isConnectButtonVisible = true
                 state.isDisconnectButtonVisible = false
+            case UIAction.serverBecameStarted:
+                state.isStartServerButtonVisible = false
+                state.isStopServerButtonVisible = true
+            case UIAction.serverBecameStopped:
+                state.isStartServerButtonVisible = true
+                state.isStopServerButtonVisible = false
             default: break
             }
 

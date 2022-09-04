@@ -62,6 +62,8 @@
 		FB689BDE28C4F3CD00CA8513 /* ClientConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F43E9289AF3BE007FAF4A /* ClientConnection.swift */; };
 		FB689BDF28C4F3CD00CA8513 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F43E7289AF39F007FAF4A /* Client.swift */; };
 		FB689BE128C4F4F500CA8513 /* LocalNetworkServers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB689BE028C4F4F500CA8513 /* LocalNetworkServers.swift */; };
+		FB689BE428C4F69700CA8513 /* ServerMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB689BE228C4F68100CA8513 /* ServerMiddleware.swift */; };
+		FB689BE528C4F69800CA8513 /* ServerMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB689BE228C4F68100CA8513 /* ServerMiddleware.swift */; };
 		FB94F69D289EDAE9001F99E6 /* Letter+DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94F69C289EDAE9001F99E6 /* Letter+DateFormat.swift */; };
 		FB94F69E289EDAE9001F99E6 /* Letter+DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94F69C289EDAE9001F99E6 /* Letter+DateFormat.swift */; };
 		FB94F6A0289EDC47001F99E6 /* Letter+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94F69F289EDC47001F99E6 /* Letter+Identifiable.swift */; };
@@ -186,6 +188,7 @@
 		FB483BAE2892156A00C155C1 /* ClientCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientCommand.swift; sourceTree = "<group>"; };
 		FB483BAF2892156A00C155C1 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		FB689BE028C4F4F500CA8513 /* LocalNetworkServers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetworkServers.swift; sourceTree = "<group>"; };
+		FB689BE228C4F68100CA8513 /* ServerMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerMiddleware.swift; sourceTree = "<group>"; };
 		FB84F918289217C00058D05D /* Server.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Server.entitlements; sourceTree = "<group>"; };
 		FB84F91A28921A9C0058D05D /* ProtocolFramer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolFramer.swift; sourceTree = "<group>"; };
 		FB84F91D2892E4FB0058D05D /* ServerDataSendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDataSendable.swift; sourceTree = "<group>"; };
@@ -342,6 +345,7 @@
 			children = (
 				FB0F4449289C4ABD007FAF4A /* ConnectionMiddleware.swift */,
 				FB94F6A8289EFE38001F99E6 /* ServersBrowserMiddleware.swift */,
+				FB689BE228C4F68100CA8513 /* ServerMiddleware.swift */,
 			);
 			path = Middlewares;
 			sourceTree = "<group>";
@@ -660,6 +664,7 @@
 				FBC866C9289E7B620087826B /* ClientsView.swift in Sources */,
 				FB0F444A289C4ABD007FAF4A /* ConnectionMiddleware.swift in Sources */,
 				FB0F43DA289AF26F007FAF4A /* ClientApp.swift in Sources */,
+				FB689BE428C4F69700CA8513 /* ServerMiddleware.swift in Sources */,
 				FB0F4446289C2EA0007FAF4A /* UIState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,6 +691,7 @@
 				FBC866CA289E7B620087826B /* ClientsView.swift in Sources */,
 				FB0F444B289C4ABD007FAF4A /* ConnectionMiddleware.swift in Sources */,
 				FB0F43DB289AF26F007FAF4A /* ClientApp.swift in Sources */,
+				FB689BE528C4F69800CA8513 /* ServerMiddleware.swift in Sources */,
 				FB0F4447289C2EA0007FAF4A /* UIState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

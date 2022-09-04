@@ -12,7 +12,8 @@ struct ClientApp: App {
     @StateObject var store = Store(AppState(), middlewares: [
         LogMiddleware(),
         ConnectionMiddleware(),
-        ServersBrowserMiddleware()
+        ServersBrowserMiddleware(),
+        ServerMiddleware()
     ])
     
     var body: some Scene {

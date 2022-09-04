@@ -18,7 +18,7 @@ enum AppAction: Action {
     case incomeLetter(Letter)
     case outcomeLetter(Letter)
     case assignSelfId(UUID)
-    case runServer
+    case startServer
     case stopServer
 }
 
@@ -29,6 +29,8 @@ enum UIAction: Action {
 
     case becameConnected
     case becameDisconnected
+    case serverBecameStarted
+    case serverBecameStopped
 
     case connectViewUpdateValues(name: String, ip: String)
 

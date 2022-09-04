@@ -1,6 +1,5 @@
 import Foundation
 import NetworkCommon
-import Network
 
 final class ServersBrowserMiddleware: Middleware<AppState> {
     private let browser = LocalNetworkServers()

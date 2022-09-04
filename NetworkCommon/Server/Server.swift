@@ -12,6 +12,10 @@ public final class Server {
     private var waiter: DispatchWorkItem!
     private var connections: [UUID: ServerConnection] = [:]
 
+    public var onError: ((Swift.Error) -> Void)?
+    public var onStop: (() -> Void)?
+    public var onStart: (() -> Void)?
+
     public init(_ port: UInt16) throws {
         guard let port = NWEndpoint.Port(rawValue: port) else {
             throw Error.incorrectPort
@@ -27,7 +31,8 @@ public final class Server {
         waiter = DispatchWorkItem {}
     }
 
-    public func start() throws {
+    @available (*, deprecated)
+    public func startSync() throws {
         let waiter = DispatchWorkItem {}
         var error: Swift.Error?
         _start { err in
@@ -37,6 +42,14 @@ public final class Server {
         if let error = error {
             throw error
         }
+    }
+
+    public func start() {
+        _start(completion: { _ in })
+    }
+
+    public func stop() {
+        listener.cancel()
     }
 
     private func _start(completion: @escaping (Swift.Error?) -> Void) {
@@ -57,10 +70,18 @@ public final class Server {
         print("new state \(newState)")
         switch newState {
         case .setup: break
-        case let .waiting(error): completion(error)
-        case .ready: print("ready")
-        case let .failed(error): completion(error)
-        case .cancelled: completion(nil)
+        case let .waiting(error):
+            completion(error)
+            onError?(error)
+        case .ready:
+            print("ready")
+            onStart?()
+        case let .failed(error):
+            completion(error)
+            onError?(error)
+        case .cancelled:
+            completion(nil)
+            onStop?()
         @unknown default: break
         }
     }
