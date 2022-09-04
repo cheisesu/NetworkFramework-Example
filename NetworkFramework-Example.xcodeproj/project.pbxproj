@@ -28,17 +28,11 @@
 		FB0F4405289AF80D007FAF4A /* NetworkCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0F43F0289AF625007FAF4A /* NetworkCommon.framework */; };
 		FB0F4406289AF80D007FAF4A /* NetworkCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB0F43F0289AF625007FAF4A /* NetworkCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FB0F440B289AF846007FAF4A /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F440A289AF846007FAF4A /* Data+Extension.swift */; };
-		FB0F440C289AF92A007FAF4A /* ClientConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F43E9289AF3BE007FAF4A /* ClientConnection.swift */; };
-		FB0F440D289AF92B007FAF4A /* ClientConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F43E9289AF3BE007FAF4A /* ClientConnection.swift */; };
 		FB0F440E289AFAD9007FAF4A /* NetworkCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0F43F0289AF625007FAF4A /* NetworkCommon.framework */; };
 		FB0F440F289AFAD9007FAF4A /* NetworkCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB0F43F0289AF625007FAF4A /* NetworkCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FB0F4413289AFADE007FAF4A /* NetworkCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0F43F0289AF625007FAF4A /* NetworkCommon.framework */; };
 		FB0F4414289AFADE007FAF4A /* NetworkCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB0F43F0289AF625007FAF4A /* NetworkCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FB0F4419289AFB23007FAF4A /* ClientDataSendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F4418289AFB23007FAF4A /* ClientDataSendable.swift */; };
-		FB0F441A289AFC58007FAF4A /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F43E7289AF39F007FAF4A /* Client.swift */; };
-		FB0F441B289AFC59007FAF4A /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F43E7289AF39F007FAF4A /* Client.swift */; };
-		FB0F441F289C117A007FAF4A /* DefaultMessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F441E289C116D007FAF4A /* DefaultMessagesHandler.swift */; };
-		FB0F4420289C117A007FAF4A /* DefaultMessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F441E289C116D007FAF4A /* DefaultMessagesHandler.swift */; };
 		FB0F4424289C11B1007FAF4A /* ClientMessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F4423289C11B1007FAF4A /* ClientMessagesHandler.swift */; };
 		FB0F4429289C1B7C007FAF4A /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F4427289C1A1E007FAF4A /* ConnectView.swift */; };
 		FB0F442A289C1B7C007FAF4A /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F4427289C1A1E007FAF4A /* ConnectView.swift */; };
@@ -60,10 +54,13 @@
 		FB0F444B289C4ABD007FAF4A /* ConnectionMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F4449289C4ABD007FAF4A /* ConnectionMiddleware.swift */; };
 		FB429B3B289EBE4300B5079A /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB429B3A289EBE4300B5079A /* Letter.swift */; };
 		FB483BA12892154800C155C1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB483BA02892154800C155C1 /* main.swift */; };
-		FB483BB52892156A00C155C1 /* ServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB483BAC2892156A00C155C1 /* ServerConnection.swift */; };
-		FB483BB82892156A00C155C1 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB483BAF2892156A00C155C1 /* Server.swift */; };
-		FB84F9232892F4820058D05D /* DefaultMessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84F9222892F4820058D05D /* DefaultMessagesHandler.swift */; };
-		FB84F9252892F7B10058D05D /* HelloMessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84F9242892F7B10058D05D /* HelloMessagesHandler.swift */; };
+		FB689BD028C4F23800CA8513 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB483BAF2892156A00C155C1 /* Server.swift */; };
+		FB689BD128C4F23800CA8513 /* HelloServerMessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84F9242892F7B10058D05D /* HelloServerMessagesHandler.swift */; };
+		FB689BD228C4F23800CA8513 /* DefaultServerMessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84F9222892F4820058D05D /* DefaultServerMessagesHandler.swift */; };
+		FB689BD328C4F23800CA8513 /* ServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB483BAC2892156A00C155C1 /* ServerConnection.swift */; };
+		FB689BD728C4F39A00CA8513 /* DefaultClientMessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F441E289C116D007FAF4A /* DefaultClientMessagesHandler.swift */; };
+		FB689BDE28C4F3CD00CA8513 /* ClientConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F43E9289AF3BE007FAF4A /* ClientConnection.swift */; };
+		FB689BDF28C4F3CD00CA8513 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F43E7289AF39F007FAF4A /* Client.swift */; };
 		FB94F69D289EDAE9001F99E6 /* Letter+DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94F69C289EDAE9001F99E6 /* Letter+DateFormat.swift */; };
 		FB94F69E289EDAE9001F99E6 /* Letter+DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94F69C289EDAE9001F99E6 /* Letter+DateFormat.swift */; };
 		FB94F6A0289EDC47001F99E6 /* Letter+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94F69F289EDC47001F99E6 /* Letter+Identifiable.swift */; };
@@ -165,7 +162,7 @@
 		FB0F43F3289AF625007FAF4A /* NetworkCommon.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkCommon.docc; sourceTree = "<group>"; };
 		FB0F440A289AF846007FAF4A /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		FB0F4418289AFB23007FAF4A /* ClientDataSendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDataSendable.swift; sourceTree = "<group>"; };
-		FB0F441E289C116D007FAF4A /* DefaultMessagesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMessagesHandler.swift; sourceTree = "<group>"; };
+		FB0F441E289C116D007FAF4A /* DefaultClientMessagesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultClientMessagesHandler.swift; sourceTree = "<group>"; };
 		FB0F4423289C11B1007FAF4A /* ClientMessagesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientMessagesHandler.swift; sourceTree = "<group>"; };
 		FB0F4427289C1A1E007FAF4A /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
 		FB0F442C289C1F8F007FAF4A /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -191,8 +188,8 @@
 		FB84F91A28921A9C0058D05D /* ProtocolFramer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolFramer.swift; sourceTree = "<group>"; };
 		FB84F91D2892E4FB0058D05D /* ServerDataSendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDataSendable.swift; sourceTree = "<group>"; };
 		FB84F91F2892F3050058D05D /* ServerMessagesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerMessagesHandler.swift; sourceTree = "<group>"; };
-		FB84F9222892F4820058D05D /* DefaultMessagesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMessagesHandler.swift; sourceTree = "<group>"; };
-		FB84F9242892F7B10058D05D /* HelloMessagesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloMessagesHandler.swift; sourceTree = "<group>"; };
+		FB84F9222892F4820058D05D /* DefaultServerMessagesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultServerMessagesHandler.swift; sourceTree = "<group>"; };
+		FB84F9242892F7B10058D05D /* HelloServerMessagesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloServerMessagesHandler.swift; sourceTree = "<group>"; };
 		FB84F926289306330058D05D /* CommandVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandVisibility.swift; sourceTree = "<group>"; };
 		FB94F69C289EDAE9001F99E6 /* Letter+DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Letter+DateFormat.swift"; sourceTree = "<group>"; };
 		FB94F69F289EDC47001F99E6 /* Letter+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Letter+Identifiable.swift"; sourceTree = "<group>"; };
@@ -247,7 +244,6 @@
 			children = (
 				FBC866CB289E8FDF0087826B /* Utils */,
 				FB0F443B289C1FFA007FAF4A /* Redux */,
-				FB0F43E6289AF398007FAF4A /* Network */,
 				FB0F43CB289AF26E007FAF4A /* ClientApp.swift */,
 				FB0F43CC289AF26E007FAF4A /* ContentView.swift */,
 				FB0F43CD289AF26F007FAF4A /* Assets.xcassets */,
@@ -266,25 +262,14 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		FB0F43E6289AF398007FAF4A /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				FB0F43E7289AF39F007FAF4A /* Client.swift */,
-				FB0F43E9289AF3BE007FAF4A /* ClientConnection.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		FB0F43F1289AF625007FAF4A /* NetworkCommon */ = {
 			isa = PBXGroup;
 			children = (
-				FB84F91A28921A9C0058D05D /* ProtocolFramer.swift */,
+				FB689BD428C4F33300CA8513 /* Client */,
+				FB689BCC28C4F1D200CA8513 /* Server */,
+				FB689BCB28C4F1B500CA8513 /* Protocols */,
 				FB483BAD2892156A00C155C1 /* ProtocolError.swift */,
 				FB0F43FE289AF6CD007FAF4A /* Commands */,
-				FB84F91F2892F3050058D05D /* ServerMessagesHandler.swift */,
-				FB0F4423289C11B1007FAF4A /* ClientMessagesHandler.swift */,
-				FB84F91D2892E4FB0058D05D /* ServerDataSendable.swift */,
-				FB0F4418289AFB23007FAF4A /* ClientDataSendable.swift */,
 				FB84F9282893D2660058D05D /* Entities */,
 				FB0F43F2289AF625007FAF4A /* NetworkCommon.h */,
 				FB0F43F3289AF625007FAF4A /* NetworkCommon.docc */,
@@ -308,14 +293,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FB0F441C289C1165007FAF4A /* MessagesHandlers */ = {
-			isa = PBXGroup;
-			children = (
-				FB0F441E289C116D007FAF4A /* DefaultMessagesHandler.swift */,
-			);
-			path = MessagesHandlers;
 			sourceTree = "<group>";
 		};
 		FB0F4426289C17CF007FAF4A /* ReduxCore */ = {
@@ -394,29 +371,74 @@
 		FB483B9F2892154800C155C1 /* Server */ = {
 			isa = PBXGroup;
 			children = (
-				FB84F91928921A9C0058D05D /* Protocol */,
 				FB84F918289217C00058D05D /* Server.entitlements */,
-				FB483BAF2892156A00C155C1 /* Server.swift */,
-				FB483BAC2892156A00C155C1 /* ServerConnection.swift */,
 				FB483BA02892154800C155C1 /* main.swift */,
 				FB94F6A5289EF3AE001F99E6 /* Info.plist */,
 			);
 			path = Server;
 			sourceTree = "<group>";
 		};
-		FB84F91928921A9C0058D05D /* Protocol */ = {
+		FB689BCB28C4F1B500CA8513 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				FB84F9212892F4770058D05D /* MessagesHandlers */,
+				FB84F91A28921A9C0058D05D /* ProtocolFramer.swift */,
 			);
-			path = Protocol;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
-		FB84F9212892F4770058D05D /* MessagesHandlers */ = {
+		FB689BCC28C4F1D200CA8513 /* Server */ = {
 			isa = PBXGroup;
 			children = (
-				FB84F9222892F4820058D05D /* DefaultMessagesHandler.swift */,
-				FB84F9242892F7B10058D05D /* HelloMessagesHandler.swift */,
+				FB483BAF2892156A00C155C1 /* Server.swift */,
+				FB483BAC2892156A00C155C1 /* ServerConnection.swift */,
+				FB689BCE28C4F1EB00CA8513 /* MessagesHandlers */,
+				FB689BCD28C4F1DB00CA8513 /* Protocols */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		FB689BCD28C4F1DB00CA8513 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FB84F91F2892F3050058D05D /* ServerMessagesHandler.swift */,
+				FB84F91D2892E4FB0058D05D /* ServerDataSendable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FB689BCE28C4F1EB00CA8513 /* MessagesHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				FB84F9222892F4820058D05D /* DefaultServerMessagesHandler.swift */,
+				FB84F9242892F7B10058D05D /* HelloServerMessagesHandler.swift */,
+			);
+			path = MessagesHandlers;
+			sourceTree = "<group>";
+		};
+		FB689BD428C4F33300CA8513 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				FB0F43E7289AF39F007FAF4A /* Client.swift */,
+				FB0F43E9289AF3BE007FAF4A /* ClientConnection.swift */,
+				FB689BD628C4F34400CA8513 /* MessagesHandlers */,
+				FB689BD528C4F33A00CA8513 /* Protocols */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		FB689BD528C4F33A00CA8513 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FB0F4423289C11B1007FAF4A /* ClientMessagesHandler.swift */,
+				FB0F4418289AFB23007FAF4A /* ClientDataSendable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FB689BD628C4F34400CA8513 /* MessagesHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				FB0F441E289C116D007FAF4A /* DefaultClientMessagesHandler.swift */,
 			);
 			path = MessagesHandlers;
 			sourceTree = "<group>";
@@ -436,7 +458,6 @@
 			isa = PBXGroup;
 			children = (
 				FBC866CC289E8FEC0087826B /* Extensions */,
-				FB0F441C289C1165007FAF4A /* MessagesHandlers */,
 				FB0F4426289C17CF007FAF4A /* ReduxCore */,
 			);
 			path = Utils;
@@ -620,9 +641,7 @@
 			files = (
 				FB94F6A3289EE89D001F99E6 /* Letter+Equitable.swift in Sources */,
 				FBC866CE289E8FFC0087826B /* ConnectionDetails+Identifiable.swift in Sources */,
-				FB0F440C289AF92A007FAF4A /* ClientConnection.swift in Sources */,
 				FB0F4435289C1F8F007FAF4A /* ReduxError.swift in Sources */,
-				FB0F441F289C117A007FAF4A /* DefaultMessagesHandler.swift in Sources */,
 				FBA6AC4E289EB878008C922C /* ChatView.swift in Sources */,
 				FB0F4437289C1F8F007FAF4A /* LogMiddleware.swift in Sources */,
 				FB94F69D289EDAE9001F99E6 /* Letter+DateFormat.swift in Sources */,
@@ -632,7 +651,6 @@
 				FB0F43DC289AF26F007FAF4A /* ContentView.swift in Sources */,
 				FB0F443D289C2004007FAF4A /* AppState.swift in Sources */,
 				FB0F442A289C1B7C007FAF4A /* ConnectView.swift in Sources */,
-				FB0F441A289AFC58007FAF4A /* Client.swift in Sources */,
 				FB0F4441289C2E5E007FAF4A /* Actions.swift in Sources */,
 				FB0F4439289C1F8F007FAF4A /* Types.swift in Sources */,
 				FB94F6A0289EDC47001F99E6 /* Letter+Identifiable.swift in Sources */,
@@ -649,9 +667,7 @@
 			files = (
 				FB94F6A4289EE89D001F99E6 /* Letter+Equitable.swift in Sources */,
 				FBC866CF289E8FFC0087826B /* ConnectionDetails+Identifiable.swift in Sources */,
-				FB0F440D289AF92B007FAF4A /* ClientConnection.swift in Sources */,
 				FB0F4436289C1F8F007FAF4A /* ReduxError.swift in Sources */,
-				FB0F4420289C117A007FAF4A /* DefaultMessagesHandler.swift in Sources */,
 				FBA6AC4F289EB878008C922C /* ChatView.swift in Sources */,
 				FB0F4438289C1F8F007FAF4A /* LogMiddleware.swift in Sources */,
 				FB94F69E289EDAE9001F99E6 /* Letter+DateFormat.swift in Sources */,
@@ -661,7 +677,6 @@
 				FB0F43DD289AF26F007FAF4A /* ContentView.swift in Sources */,
 				FB0F443E289C2004007FAF4A /* AppState.swift in Sources */,
 				FB0F4429289C1B7C007FAF4A /* ConnectView.swift in Sources */,
-				FB0F441B289AFC59007FAF4A /* Client.swift in Sources */,
 				FB0F4442289C2E5E007FAF4A /* Actions.swift in Sources */,
 				FB0F443A289C1F8F007FAF4A /* Types.swift in Sources */,
 				FB94F6A1289EDC47001F99E6 /* Letter+Identifiable.swift in Sources */,
@@ -677,12 +692,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB0F4424289C11B1007FAF4A /* ClientMessagesHandler.swift in Sources */,
+				FB689BD128C4F23800CA8513 /* HelloServerMessagesHandler.swift in Sources */,
 				FB0F43FB289AF689007FAF4A /* ServerCommand.swift in Sources */,
 				FB0F43FA289AF689007FAF4A /* ServerDataSendable.swift in Sources */,
+				FB689BDF28C4F3CD00CA8513 /* Client.swift in Sources */,
 				FB0F43FC289AF6B2007FAF4A /* ServerMessagesHandler.swift in Sources */,
 				FB0F4403289AF790007FAF4A /* ConnectionDetails.swift in Sources */,
+				FB689BD728C4F39A00CA8513 /* DefaultClientMessagesHandler.swift in Sources */,
 				FB0F43FD289AF6CC007FAF4A /* CommandVisibility.swift in Sources */,
 				FB0F440B289AF846007FAF4A /* Data+Extension.swift in Sources */,
+				FB689BDE28C4F3CD00CA8513 /* ClientConnection.swift in Sources */,
+				FB689BD328C4F23800CA8513 /* ServerConnection.swift in Sources */,
+				FB689BD228C4F23800CA8513 /* DefaultServerMessagesHandler.swift in Sources */,
 				FB0F43F9289AF689007FAF4A /* ClientCommand.swift in Sources */,
 				FB0F43FF289AF6E1007FAF4A /* ProtocolError.swift in Sources */,
 				FB0F4400289AF779007FAF4A /* ProtocolFramer.swift in Sources */,
@@ -690,6 +711,7 @@
 				FB0F4402289AF790007FAF4A /* Message.swift in Sources */,
 				FB429B3B289EBE4300B5079A /* Letter.swift in Sources */,
 				FB0F4401289AF790007FAF4A /* ServerContentError.swift in Sources */,
+				FB689BD028C4F23800CA8513 /* Server.swift in Sources */,
 				FB0F43F4289AF625007FAF4A /* NetworkCommon.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -698,10 +720,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB483BB82892156A00C155C1 /* Server.swift in Sources */,
-				FB84F9232892F4820058D05D /* DefaultMessagesHandler.swift in Sources */,
-				FB483BB52892156A00C155C1 /* ServerConnection.swift in Sources */,
-				FB84F9252892F7B10058D05D /* HelloMessagesHandler.swift in Sources */,
 				FB483BA12892154800C155C1 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1108,6 +1126,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1188,6 +1207,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

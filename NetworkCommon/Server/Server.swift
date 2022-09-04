@@ -1,9 +1,9 @@
 import Foundation
 import Network
-import NetworkCommon
 
-final class Server {
-    enum Error: Swift.Error {
+public final class Server {
+    public enum Error: Swift.Error {
+        /// Wrong port
         case incorrectPort
     }
 
@@ -12,7 +12,7 @@ final class Server {
     private var waiter: DispatchWorkItem!
     private var connections: [UUID: ServerConnection] = [:]
 
-    init(_ port: UInt16) throws {
+    public init(_ port: UInt16) throws {
         guard let port = NWEndpoint.Port(rawValue: port) else {
             throw Error.incorrectPort
         }
@@ -27,7 +27,7 @@ final class Server {
         waiter = DispatchWorkItem {}
     }
 
-    func start() throws {
+    public func start() throws {
         let waiter = DispatchWorkItem {}
         var error: Swift.Error?
         _start { err in
@@ -80,15 +80,15 @@ final class Server {
     }
 
     private func createMessagesHandler(with connection: ServerConnection) -> ServerMessagesHandler {
-        let helloHandler = HelloMessagesHandler(connectionId: connection.id,
-                                                dataSender: connection,
-                                                onClientDetails: { [weak connection] details in
+        let helloHandler = HelloServerMessagesHandler(connectionId: connection.id,
+                                                      dataSender: connection,
+                                                      onClientDetails: { [weak connection] details in
             connection?.set(details)
         }, onFinish: { [weak self] in
             self?.broadcastClients()
         })
 
-        let defaultHandler = DefaultMessagesHandler(
+        let defaultHandler = DefaultServerMessagesHandler(
             connectionId: connection.id,
             dataSender: connection,
             subhandlers: [helloHandler],

@@ -18,6 +18,8 @@ enum AppAction: Action {
     case incomeLetter(Letter)
     case outcomeLetter(Letter)
     case assignSelfId(UUID)
+    case runServer
+    case stopServer
 }
 
 enum UIAction: Action {

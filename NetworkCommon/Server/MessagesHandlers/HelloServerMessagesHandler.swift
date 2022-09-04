@@ -1,7 +1,6 @@
 import Foundation
-import NetworkCommon
 
-final class HelloMessagesHandler: ServerMessagesHandler {
+final class HelloServerMessagesHandler: ServerMessagesHandler {
     private weak var dataSender: ServerDataSendable!
     private let connectionId: UUID
     private var finished: Bool = false

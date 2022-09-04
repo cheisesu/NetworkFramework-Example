@@ -1,7 +1,6 @@
 import Foundation
-import NetworkCommon
 
-final class DefaultMessagesHandler: ClientMessagesHandler {
+final class DefaultClientMessagesHandler: ClientMessagesHandler {
     /// Handlers of group of commands that must be handled together
     private var subhandlers: [ClientMessagesHandler] = []
     private var currentGroupHandler: ClientMessagesHandler?

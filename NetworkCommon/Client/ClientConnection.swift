@@ -1,6 +1,5 @@
 import Foundation
 import Network
-import NetworkCommon
 
 final class ClientConnection {
     private let queue: DispatchQueue

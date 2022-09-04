@@ -1,7 +1,6 @@
 import Foundation
-import NetworkCommon
 
-final class DefaultMessagesHandler: ServerMessagesHandler {
+final class DefaultServerMessagesHandler: ServerMessagesHandler {
     /// Handlers of group of commands that must be handled together
     private var subhandlers: [ServerMessagesHandler] = []
     private var currentGroupHandler: ServerMessagesHandler?
@@ -54,11 +53,6 @@ final class DefaultMessagesHandler: ServerMessagesHandler {
 
     func doesMessageEndGroup(_ message: Message<ClientCommand>) -> Bool {
         return false
-    }
-
-    @available (*, deprecated)
-    func add(subhandler: ServerMessagesHandler) {
-        subhandlers.append(subhandler)
     }
 
     private func handleGlobalMessage(_ message: Message<ClientCommand>) throws {

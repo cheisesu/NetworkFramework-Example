@@ -1,10 +1,3 @@
-//
-//  ConnectionMiddleware.swift
-//  NetworkFramework-Example
-//
-//  Created by Дмитрий Шелонин on 04.08.2022.
-//
-
 import Foundation
 import NetworkCommon
 import Network

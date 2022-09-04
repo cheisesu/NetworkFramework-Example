@@ -1,6 +1,5 @@
 import Foundation
 import Network
-import NetworkCommon
 
 final class ServerConnection {
     private let queue: DispatchQueue
@@ -66,7 +65,7 @@ final class ServerConnection {
             let metadata = contentContext?.protocolMetadata(definition: NWProtocolFramer.Definition.server) as? NWProtocolFramer.Message
             
             if isComplete {
-//                self?.connection.cancel()
+                //                self?.connection.cancel()
                 return
             } else if let error = error ?? (metadata?["error"] as? Error) {
                 self?.send(.error(error))
